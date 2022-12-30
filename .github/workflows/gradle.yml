@@ -33,4 +33,4 @@ jobs:
         distributions-cache-enabled: true
         dependencies-cache-enabled: true
         configuration-cache-enabled: true
-        arguments: build
+    - run: chmod 777 ./gradlew && ./gradlew build
