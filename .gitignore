@@ -16,3 +16,7 @@ gen/**
 .gradle/
 build/
 bin/
+/.idea/
+/**/.idea/
+/**/build/
+/build/

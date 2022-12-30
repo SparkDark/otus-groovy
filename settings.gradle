@@ -1,2 +1,3 @@
 rootProject.name = 'otus-goovy'
+include 'hw01-gradle'
 
