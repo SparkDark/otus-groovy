@@ -30,4 +30,8 @@ jobs:
         distribution: 'temurin'        
     - name: Build with Gradle
       uses: gradle/gradle-build-action@67421db6bd0bf253fb4bd25b31ebb98943c375e1
-    - run: chmod 777 ./gradlew && ./gradlew build 
+      with:
+        distributions-cache-enabled: true
+        dependencies-cache-enabled: true
+        configuration-cache-enabled: true
+    - run: chmod 777 ./gradlew && ./gradlew build
