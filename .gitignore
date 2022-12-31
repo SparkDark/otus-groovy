@@ -3,12 +3,14 @@
 *.ear
 *.class
 
+.idea
+.gradle
 
 # generated files
 bin/**
 gen/**
 # project based files
-.idea/
+.idea/**
 *.iml
 *.ipr
 *.iws
