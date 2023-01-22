@@ -66,12 +66,12 @@ class CustomCurrencyCell implements CurrencyCell {
     }
 
     @Override
-    public int faceValue() {
+    int faceValue() {
         return сurrency.faceValue();
     }
 
     @Override
-    public void add(Currency сurrency) {
+    void add(Currency сurrency) {
         if (this.сurrency.faceValue() != сurrency.faceValue()) {
             throw new Exception("Not supported face value");
         }
@@ -79,7 +79,7 @@ class CustomCurrencyCell implements CurrencyCell {
     }
 
     @Override
-    public Collection<Currency> extract(int count) {
+    Collection<Currency> extract(int count) {
         if (count <= 0 || count > banknotes.size()) throw new Exception("Incorrect count of banknotes : ${count} , ${banknotes.size()}");
         Collection<Currency> extracted = new ArrayList<>();
         while (count > 0) {
@@ -162,6 +162,5 @@ class CustomStorage implements Storage {
         }
 
         return false
-
     }
 }

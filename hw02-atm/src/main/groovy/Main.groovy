@@ -5,6 +5,6 @@ import capture.CustomDeviceCardCapture
 
 static void main(String[] args) {
 
- def storage = new CustomStorage()
+  def storage = new CustomStorage()
   new Atm(new CustomCashAssepter(storage),new CustomDeviceCardCapture())
 }
