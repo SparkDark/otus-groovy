@@ -2,6 +2,7 @@
 *.war
 *.ear
 *.class
+*.lock
 
 .idea
 .gradle
@@ -15,10 +16,13 @@ gen/**
 *.ipr
 *.iws
 .gradletasknamecache
-.gradle/
+.gradle/**
 build/
 bin/
 /.idea/
 /**/.idea/
 /**/build/
 /build/
+
+/.gradle/
+*.bin

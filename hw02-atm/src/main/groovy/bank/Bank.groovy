@@ -1,0 +1,5 @@
+package bank
+
+interface Bank {
+
+}
